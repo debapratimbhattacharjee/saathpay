@@ -1,0 +1,30 @@
+import { ViewStyle, ImageStyle, TextStyle } from "react-native";
+interface Style {
+    mainContainer: ViewStyle;
+    screenContainer: ViewStyle;
+    headerContainer: ViewStyle;
+    titleTextStyle: TextStyle;
+    descriptionTextStyle: TextStyle;
+    textInputContainer: ViewStyle;
+    textInputStyle: TextStyle;
+    forgotPasswordTextStyle: TextStyle;
+    forgotButtonStyle: ViewStyle;
+    signInButtonStyle: ViewStyle;
+    signInButtonTextStyle: TextStyle;
+    logoImageStyle: ImageStyle;
+    googleButtonStyle: ViewStyle;
+    googleButtonTextStyle: TextStyle;
+    facebookButtonStyle: ViewStyle;
+    facebookButtonTextStyle: TextStyle;
+    signUpButtonContainer: ViewStyle;
+    signUpButtonStyle: ViewStyle;
+    signUpTextStyle: TextStyle;
+    signUpButtonTextStyle: TextStyle;
+    appleButtonStyle: ViewStyle;
+    appleButtonTextStyle: TextStyle;
+    newAccountContainer: ViewStyle;
+    keyboardAvoidingViewStyle: ViewStyle;
+    descriptionContainer: ViewStyle;
+}
+declare const _default: Style;
+export default _default;

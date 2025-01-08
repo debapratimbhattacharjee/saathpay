@@ -1,0 +1,23 @@
+.text-center{
+    margin: auto;
+}
+
+.text_area {
+    color: #f1f1f1;
+}
+.text_area h1 {
+    color: #f1f1f1;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.text_area p{
+    font-size: 1.2rem;
+}
+
+.card__img {
+    filter: grayscale(1);
+    transition: 0.5s ease-in-out;
+}
+.card__img:hover {
+    filter: grayscale(0);
+}

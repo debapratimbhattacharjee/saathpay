@@ -1,0 +1,90 @@
+.footer {
+    background: #1b1c1d;
+    font-family: "Poppins", sans-serif;
+    color: #f1f1f1;
+}
+
+.btn_area{
+  text-align: center;
+}
+
+
+
+.email{
+  color: #f1f1f1;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+.para {
+    width:300px;
+    font-size: 15px;
+}
+
+.btn_svg {
+    width: 120px;
+}
+
+  .p1 {
+    text-align:center;
+    font-size: 15px;
+}
+
+ .p2 {
+   text-align:left;
+    font-size: 15px;
+}
+
+.social_svg{
+ width:30px;
+}
+
+.footer_logo{
+  width:120px;
+}
+@media only screen and (max-width: 600px) {
+
+  .social_svg{
+    width:30px;
+   }
+
+  .btn_area{
+    text-align: left;
+  }
+  
+  .social{
+    text-align:left;
+    
+  }
+
+ 
+    h4 {
+        padding-bottom: 5px;
+        font-weight: bold;
+        font-size: 21px;
+    }
+
+    p {
+
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+
+    .btn_svg {
+        width: 90px;
+    }
+
+    .p1 {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .p2 {
+        text-align: center;
+        font-size: 12px;
+    }
+
+
+}

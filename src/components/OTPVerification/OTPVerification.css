@@ -1,0 +1,102 @@
+.otp-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Aligns content to the top */
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+   color: #f1f1f1;
+  }
+  
+  .otp-container {
+    max-width: 400px;
+    width: 100%; /* Full width for smaller screens */
+    background: rgba(26, 48, 65, 0.39);
+    border: 1px solid #33E6F6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Slight shadow for a polished look */
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 50px; /* Add margin to move it down from the top */
+  }
+  
+  .otp-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .otp-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .otp-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border: 1px solid #33E6F6;
+    border-radius: 10px;
+    background: rgba(26, 48, 65, 0.39);
+    color: #fff;
+    text-align: center;
+  }
+  
+  .nav_btn {
+    background: #33E6F6;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: -10px; /* Moves the button up */
+  }
+  
+  .nav_btn:hover {
+    background: #28c5d9; /* Slightly darker hover effect */
+  }
+  
+  .success-message {
+    color: #28c5d9;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .resend-link {
+    color: #33E6F6;
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  /* Mobile View Adjustments */
+  @media only screen and (max-width: 600px) {
+    .otp-container {
+      padding: 20px 10px;
+      margin-top: 0px; /* Optional: Shift OTP container up on mobile */
+    }
+  
+    .otp-container h2 {
+      font-size: 20px;
+    }
+  
+    .otp-container p {
+      font-size: 14px;
+    }
+  
+    .otp-input {
+      font-size: 16px;
+    }
+  
+    .nav_btn {
+      font-size: 14px;
+      padding: 8px 15px;
+      margin-top: -5px; /* Moves the button up on mobile */
+    }
+  }
+  

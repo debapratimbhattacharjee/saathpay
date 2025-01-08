@@ -1,0 +1,90 @@
+.money-transfer-container {
+    color: #f1f1f1;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .money-transfer-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .transfer-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .icon {
+    text-align: center;
+    margin: 10px;
+    background-color: white; /* White background */
+    padding: 10px; /* Smaller padding around the image and text */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Smaller shadow */
+    width: 60px; /* Reduced width */
+    height: 60px; /* Reduced height */
+  }
+  
+  .icon img {
+    width: 40px; /* Smaller image width */
+    height: 40px; /* Smaller image height */
+    margin-bottom: 8px; /* Adjusted space between the image and the text */
+  }
+  
+  .icon p {
+    font-size: 12px; /* Smaller text size */
+    color: #ffffff; /* Text color */
+    margin-top: 4px; /* Space between the image and text */
+  }
+  
+  .footer-navigation {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: #33e6f6;
+    padding: 10px 0;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .nav-item {
+    color: #1a303e;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 600px) {
+    .transfer-icons {
+      display: grid; /* Change to grid layout for smaller screens */
+      grid-template-columns: repeat(3, 1fr); /* 4 icons per row */
+      gap: 40px; /* Reduced gap for better alignment on smaller screens */
+      justify-items: center; /* Center the icons horizontally within their grid cells */
+      align-items: center; /* Center the icons vertically within their grid cells */
+    }
+  
+    .icon {
+      display: flex; /* Use flexbox for icon and text alignment */
+      flex-direction: column; /* Stack the icon image and text vertically */
+      align-items: center; /* Center the content horizontally */
+      text-align: center; /* Align the text centrally under the icons */
+      margin: 30px 0; /* Add some spacing around each icon */
+    }
+  
+    .icon img {
+      width: 40px; /* Adjust size for smaller screens */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 8px; /* Add space between the image and the text */
+    }
+  
+    .icon p {
+      font-size: 14px; /* Adjust font size for readability on small screens */
+      margin: 0; /* Remove unnecessary margins */
+    }
+  }
+  

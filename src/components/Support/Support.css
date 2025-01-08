@@ -1,0 +1,41 @@
+
+  .help_svg{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+
+.need_svg{
+    width: 30%;
+    margin-right: 20px;
+}
+
+.customer_svg{
+  width: 32%;
+  margin-left: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .help_svg{
+      display:flex;
+      flex-direction: column;
+      justify-content:center;
+      margin-top: 10px;
+      align-items: center;
+  }
+
+
+  .need_svg{
+      width: 70%;
+      margin-left: 20px;
+  }
+
+  .customer_svg{
+    width: 70%;
+    margin-right:20px;
+  }
+}
