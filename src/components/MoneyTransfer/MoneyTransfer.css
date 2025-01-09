@@ -62,8 +62,8 @@
   @media (max-width: 600px) {
     .transfer-icons {
       display: grid; /* Change to grid layout for smaller screens */
-      grid-template-columns: repeat(3, 1fr); /* 4 icons per row */
-      gap: 40px; /* Reduced gap for better alignment on smaller screens */
+      grid-template-columns: repeat(4, 1fr); /* 4 icons per row */
+      gap: 8px; /* Reduced gap for better alignment on smaller screens */
       justify-items: center; /* Center the icons horizontally within their grid cells */
       align-items: center; /* Center the icons vertically within their grid cells */
     }
@@ -73,17 +73,17 @@
       flex-direction: column; /* Stack the icon image and text vertically */
       align-items: center; /* Center the content horizontally */
       text-align: center; /* Align the text centrally under the icons */
-      margin: 30px 0; /* Add some spacing around each icon */
+      margin: 20px 0; /* Add some spacing around each icon */
     }
   
     .icon img {
-      width: 40px; /* Adjust size for smaller screens */
+      width: 30px; /* Reduced image size */
       height: auto; /* Maintain aspect ratio */
-      margin-bottom: 8px; /* Add space between the image and the text */
+      margin-bottom: 6px; /* Adjust spacing between the image and text */
     }
   
     .icon p {
-      font-size: 14px; /* Adjust font size for readability on small screens */
+      font-size: 12px; /* Smaller text size for better fit */
       margin: 0; /* Remove unnecessary margins */
     }
   }

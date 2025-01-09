@@ -7,6 +7,8 @@ import Scan from '../../assets/images/Scan.png';
 import Split from '../../assets/images/Split.png';
 import ToBank from '../../assets/images/ToBank.png';
 import ToMobile from '../../assets/images/ToMobile.png';
+import SplitExpenses from '../splitwise/SplitExpenses';
+
 
 const MoneyTransfer = () => {
   const navigate = useNavigate();
@@ -14,6 +16,8 @@ const MoneyTransfer = () => {
   const handleScanClick = () => {
     navigate('/qr-scanner'); // Navigate to the QR scanner page
   };
+  
+  
 
   return (
     <div className="money-transfer-container">
@@ -52,6 +56,9 @@ const MoneyTransfer = () => {
           </div>
         </div>
       </div>
+
+      {/* Split Expenses Section */}
+      <SplitExpenses />
 
       {/* Footer Navigation */}
       <div className="footer-navigation">

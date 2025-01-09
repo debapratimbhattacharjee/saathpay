@@ -1,0 +1,74 @@
+.split-expenses-container {
+    color: #f1f1f1;
+    padding: 20px;
+    height: 100vh;
+    margin-top: 60px; /* Adds a gap between Money Transfer and Splitwise sections */
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .split-expenses-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .split-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .split-icon {
+    text-align: center;
+    margin: 10px;
+    background-color: white; /* White background */
+    padding: 10px; /* Smaller padding around the image and text */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Smaller shadow */
+    width: 60px; /* Reduced width */
+    height: 60px; /* Reduced height */
+  }
+  
+  .split-icon img {
+    width: 40px; /* Smaller image width */
+    height: 40px; /* Smaller image height */
+    margin-bottom: 8px; /* Adjusted space between the image and the text */
+  }
+  
+  .split-icon p {
+    font-size: 12px; /* Smaller text size */
+    color: #ffffff; /* Text color */
+    margin-top: 4px; /* Space between the image and text */
+  }
+  
+  @media (max-width: 600px) {
+    .transfer-icons {
+      display: grid; /* Change to grid layout for smaller screens */
+      grid-template-columns: repeat(4, 1fr); /* 4 icons per row */
+      gap: 8px; /* Reduced gap for better alignment on smaller screens */
+      justify-items: center; /* Center the icons horizontally within their grid cells */
+      align-items: center; /* Center the icons vertically within their grid cells */
+    }
+  
+    .icon {
+      display: flex; /* Use flexbox for icon and text alignment */
+      flex-direction: column; /* Stack the icon image and text vertically */
+      align-items: center; /* Center the content horizontally */
+      text-align: center; /* Align the text centrally under the icons */
+      margin: 20px 0; /* Add some spacing around each icon */
+    }
+  
+    .icon img {
+      width: 30px; /* Reduced image size */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 6px; /* Adjust spacing between the image and text */
+    }
+  
+    .icon p {
+      font-size: 12px; /* Smaller text size for better fit */
+      margin: 0; /* Remove unnecessary margins */
+    }
+  }
+  

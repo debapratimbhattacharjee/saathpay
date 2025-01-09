@@ -10,7 +10,11 @@ import QRScanner from '../QRScanner/QRScanner';
 import Footer from '../Footer/Footer';
 import Login from '../Signup&login/Login'; // Correct path if folder name contains '&'
 import SignUp from '../Signup&login/SignUp'; // Correct path if folder name contains '&'
-
+import SplitWithFriends from '../SplitFriends/SplitWithFriends';
+import SplitRecurring from '../SplitRecurring/SplitRecurring';
+import SplitExpenses from '../splitwise/SplitExpenses'; // Import SplitExpenses component
+import SplitCategory from '../SplitCategory/SplitCategory';
+import SplitEvents from '../SplitEvents/SplitEvents';
 import './Hero.css';
 
 const Hero = () => {
@@ -18,6 +22,7 @@ const Hero = () => {
     <Router>
       <div className="Hero">
         <Navbar />
+        
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/faq" element={<Faq />} />
@@ -25,9 +30,18 @@ const Hero = () => {
           <Route path="/verify-otp" element={<OTPVerification />} />
           <Route path="/money-transfer" element={<MoneyTransfer />} />
           <Route path="/qr-scanner" element={<QRScanner />} />
-          <Route path="/sign-up" element={<SignUp />} />    {/* Add route for Sign Up */}
-          <Route path="/login" element={<Login />} />       {/* Add route for Login */}
+          <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/splitwithfriends" element={<SplitWithFriends />} />
+          <Route path="/splitexpenses" element={<SplitExpenses />} /> {/* Route for SplitExpenses */}
+          <Route path="/splitrecurring" element={<SplitRecurring />} /> {/* Route for SplitRecurring */}
+          <Route path="/splitbycategory" element={<SplitCategory />} />
+
+          <Route path="/eventsplitting" element={<SplitEvents />} />
+          {/* Fallback route for unrecognized paths */}
+          
         </Routes>
+        
         <Footer />
       </div>
     </Router>
