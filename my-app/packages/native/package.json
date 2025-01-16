@@ -7,7 +7,7 @@
       "react-native": "^0.76.6"
     },
     "scripts": {
-      "start": "react-native start"
+      "start": "npx react-scripts build"
     }
   }
   
