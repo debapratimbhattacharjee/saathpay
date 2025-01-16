@@ -1,97 +1,107 @@
+/* Ensure the background spans the entire page */
+html, body {
+
+ 
+}
+
 /* Main Container */
 .split-custom-container {
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 180px;
-    font-family: Arial, sans-serif; 
-    color: rgb(60, 204, 204); 
+ 
+  background:#dbedee; /* Darker background for contrast */
+  color: #2a2a3b;
+  width: 100%;
+  max-width: 400px;  /* Adjusted width */
+  margin: 300px auto; /* Center alignment */
+  padding: 50px;  /* Comfortable padding */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sharpened shadow */
+  text-align: center;
+    /* Shift upward */
+    position: relative;
+    top: -200px;
+}
 
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  }
-  
-  /* Expense Input and Other Elements */
-  .expense-input-container,
-  .friends-container {
-    margin: 15px 0; /* Increased margin for better spacing */
-  }
-  
-  /* Input Fields */
-  input {
-    
-    padding: 12px; /* Increased padding for better clickability */
-    font-size: 16px;
-    width: 100%;
-    max-width: 450px; /* Increased max-width for better visibility */
-    margin: 10px 0; /* Spacing between inputs */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box; /* Ensures padding is included in the width */
-  }
-  
-  /* Buttons */
-  .submit-button {
-    padding: 12px 20px;
-    font-size: 16px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 20px 0; /* Space around the submit button */
-    width: 100%; /* Full-width button */
-    box-sizing: border-box; /* Ensures padding is included in the width */
-    transition: background-color 0.3s ease; /* Smooth color transition on hover */
-  }
-  
-  .submit-button:hover {
-    background-color: #45a049; /* Darker green on hover */
-  }
-  
-  /* Friend Entry */
-  .friend-entry {
-    margin: 10px 0; /* Margin between friend entry fields */
-    display: flex;
-    flex-direction: column; /* Stack inputs vertically */
-    align-items: flex-start; /* Align to the left */
-  }
-  
-  .friend-entry input {
-    width: 100%; /* Ensure input takes full width */
-  }
-  
-  /* QR Code Container */
-  .qr-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 15px; /* Added margin below QR codes */
-  }
-  
-  /* QR Box Style */
-  .qr-box {
-    margin: 10px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    text-align: center;
-    background-color: #f4f4f4; /* Light background for QR boxes */
-    width: 120px; /* Set width for consistency */
-    box-sizing: border-box; /* Ensures padding is included in width */
-  }
-  
-  .qr-box img {
-    width: 100px;
-    height: 100px;
-    margin-top: 10px; /* Space between text and QR code */
-  }
-  
-  /* General Body Reset */
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0; /* Light background color for the page */
-    font-family: Arial, sans-serif;
-  }
-  
+/* Expense Input and Other Elements */
+.expense-input-container,
+.friends-container {
+  margin: 12px 0;
+}
+
+/* Input Fields */
+.split-custom-container input {
+  padding: 12px; /* Comfortable padding */
+  font-size: 16px; /* Slightly larger font size */
+  width: 100%;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background: #2a2a3b; /* Darker input field */
+  color: #eee7e7;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+  background: #3a3a4b; /* Highlight focus */
+}
+
+/* Buttons */
+.submit-button {
+  background: linear-gradient(to right, #0592e4, #0575e6); /* Vibrant gradient */
+  color: white;
+  padding: 12px; /* Comfortable padding */
+  border: none;
+  border-radius: 8px;
+  font-size: 16px; /* Comfortable font size */
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+  background: #047bb0; /* Slightly darker hover effect */
+}
+
+/* Friend Entry */
+.friend-entry {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.friend-entry input {
+  width: 100%;
+}
+
+/* QR Code Container */
+.qr-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/* QR Box Style */
+.qr-container .qr-box {
+  margin: 10px;
+  padding: 10px;
+  border: 2px dashed #0592e4; /* Highlighted border */
+  border-radius: 8px;
+  text-align: center;
+}
+.share-button {
+  padding: 10px 20px;
+  background-color: #0592e4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.share-button:hover {
+  background-color: #218838;
+}

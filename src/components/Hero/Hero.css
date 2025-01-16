@@ -1,3 +1,42 @@
-.Hero {
+/* Make sure the html and body take up the full height of the screen */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
     background: linear-gradient(113.46deg, #000000 10.07%, #031c33 51.72%, #004C92 102%);
-}
+    overflow: hidden; /* Prevents any scrolling if the content is larger than the viewport */
+  }
+  
+  /* Main wrapper container to ensure it takes up full screen */
+  .main-container {
+    min-height: 100vh; /* Ensures it fills the entire viewport */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1; /* Ensure content appears above the background */
+    background-color: transparent; /* Ensures the background doesn't get overwritten */
+  }
+  
+  /* Optional: If you have a hero section, you can apply the same styling */
+  .hero-container {
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: transparent; /* To make sure the background is not overridden */
+    position: relative;
+    z-index: 2; /* Ensures this section is above the background */
+  }
+  
+  /* Content section */
+  .content-section {
+    padding: 20px;
+    margin: 0; /* Ensures no extra margins */
+    z-index: 3; /* Keeps content above the background */
+    text-align: center; /* Center content (optional) */
+  }
+  

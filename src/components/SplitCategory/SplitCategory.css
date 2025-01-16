@@ -1,86 +1,115 @@
+/* Overall Container */
 .split-category-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
+  background: #dbedee;  /* Dark theme background */
+  color: #ffffff;  /* Light text for contrast */
+  max-width: 420px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(124, 119, 119, 0.2);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Section Headings */
+.split-category-container {
+  color: #2a2a3b;
+  
+}
+
+/* Dropdown & Input Fields */
+.category-select,
+.expense-input {
+  margin-bottom: 15px;
+}
+
+.category-select select,
+.expense-input input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #2a2a3b;
+  color: #ffffff;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.category-select select:focus,
+.expense-input input:focus {
+  background: #3a3a4b;
+}
+
+/* Add Expense Button */
+.add-expense-btn {
+  background:  #0592e4;/* Vibrant gradient */
+  color: #ffffff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.add-expense-btn:hover {
  
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
-    color: #ddd;
+}
+
+/* Expense Table */
+.categorized-expenses {
+  margin-top: 20px;
+}
+
+.category {
+  background: #29293d;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.category h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #f3fcfb;
+}
+
+/* Table Styling */
+.category table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.category th,
+.category td {
+  padding: 10px;
+  text-align: left;
+}
+
+.category th {
+  background: #3a3a4b;
+  color: #c3e0e2;
+  font-weight: bold;
+}
+
+.category td {
+  background: #2a2a3b;
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .split-category-container {
+    max-width: 100%;
+    padding: 15px;
   }
-  
- 
-  
-  .category-select {
-    margin-bottom: 20px;
-  }
-  
-  .category-select select {
-    padding: 10px;
-    width: 100%;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  .expense-input {
-    margin-bottom: 15px;
-  }
-  
-  .expense-input input {
-    padding: 10px;
-    width: 100%;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
+
   .add-expense-btn {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-    width: 100%;
-  }
-  
-  .add-expense-btn:hover {
-    background-color: #45a049;
-  }
-  
-  .categorized-expenses {
-    margin-top: 20px;
-  }
-  
-  .category {
-   
-    margin-bottom: 30px;
-  }
-  
-  .category h3 {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  .category table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .category th, .category td {
+    font-size: 14px;
     padding: 10px;
-    border: 1px solid #ddd;
-    text-align: left;
   }
-  
-  .category th { color: black;
-    background-color: #f4f4f4;
-  }
-  
-  .category td { color: black;
-    background-color: #fff;
-  }
-  
+}

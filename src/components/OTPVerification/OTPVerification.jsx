@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import './OTPVerification.css';
 
-
 import logo1 from '../../assets/images/logo1.png'; // Adjust path if necessary
 
 const OTPVerification = () => {
@@ -20,7 +19,12 @@ const OTPVerification = () => {
     // Basic OTP validation logic
     if (otp.length === 6) {
       setIsVerified(true); // OTP is verified
-      navigate('/money-transfer'); // Navigate to Money Transfer page
+
+      // Store OTP verification status in localStorage
+      localStorage.setItem('otpVerified', 'true');
+
+      // Navigate to Money Transfer page
+      navigate('/money-transfer');
     } else {
       alert('Please enter a valid 6-digit OTP');
     }
@@ -29,7 +33,9 @@ const OTPVerification = () => {
   return (
     <div className="otp-section mt-sm-5">
       <div className="otp-container">
-        <div className="logo-container"></div>
+        <div className="logo-container">
+          <img src={logo1} alt="Logo" className="logo-image" />
+        </div>
         <h2>Enter the OTP</h2>
         <p>We sent a 6-digit OTP to your registered phone number.</p>
 

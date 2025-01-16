@@ -40,12 +40,31 @@ const SplitCustom = () => {
     setQrCode(qrLink); // Set the generated QR code link
   };
 
+  // Handle sharing the QR code and contribution information
+  const handleShare = async () => {
+    if (!navigator.share) {
+      alert("Sharing is not supported on your browser.");
+      return;
+    }
+
+    try {
+      await navigator.share({
+        title: "Split Custom Payment",
+        text: `Each person needs to pay ₹${contribution}. Scan the QR code to pay.`,
+        url: qrCode, // URL of the QR code image
+      });
+      alert("Shared successfully!");
+    } catch (error) {
+      console.error("Error sharing:", error);
+    }
+  };
+
   return (
     <div className="split-custom-container">
       <h2>Split Custom</h2>
 
       {/* Total Expense Input */}
-      <div className="expense-input-container">
+      <div className="input-container">
         <input
           type="number"
           placeholder="Enter total expense"
@@ -55,7 +74,7 @@ const SplitCustom = () => {
       </div>
 
       {/* Number of People Input */}
-      <div className="expense-input-container">
+      <div className="input-container">
         <input
           type="number"
           placeholder="Enter number of people"
@@ -76,6 +95,10 @@ const SplitCustom = () => {
             <p>Contribution per Person: ₹{contribution}</p>
             <img src={qrCode} alt="QR Code for Payment" />
             <p>Scan to Pay ₹{contribution}</p>
+            {/* Share Button */}
+            <button className="share-button" onClick={handleShare}>
+              Share
+            </button>
           </div>
         </div>
       )}

@@ -70,7 +70,7 @@ const SplitWithFriends = () => {
   };
 
   return (
-    <div className="split-expenses-container">
+    <div className="split-friends-container">
       <h2>Split Expenses with Friends</h2>
 
       {/* Total Expense Input */}

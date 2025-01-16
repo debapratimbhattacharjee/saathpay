@@ -1,61 +1,142 @@
-/* SplitCustom.css */
-
-/* Main Container */
-.split-custom-container {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-  padding-bottom: 10px; /* Reduced bottom padding */
-}
-
-/* Expense Input and Other Elements */
-.expense-input-container,
-.friends-container {
-  margin: 10px 0;
-}
-
-/* Input Fields */
-input {
-  padding: 10px;
-  font-size: 16px;
+/* Wrapper for Split Expenses */
+.split-friends-container {
+ 
+  background:#dbedee; /* Darker background for contrast */
+  color: #2a2a3b;
   width: 100%;
-  max-width: 400px;
-  margin: 5px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  max-width: 400px;  /* Adjusted width */
+  margin: 300px auto; /* Center alignment */
+  padding: 50px;  /* Comfortable padding */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sharpened shadow */
+  text-align: center;
+    /* Shift upward */
+    position: relative;
+    top: -200px;
 }
 
-/* Buttons */
-.submit-button {
-  padding: 10px 20px;
+/* Section Heading */
+.split-friends-container h2 {
+  color: #2a2a3b;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/* Total Expense Input */
+.expense-input-container input {
+  width: 100%;
+  padding: 12px;
   font-size: 16px;
-  background-color: #4caf50;
-  color: white;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 10px 0; /* Reduced margin under buttons */
+  border-radius: 8px;
+  background: #2a2a3b; /* Dark input background */
+  color: #ffffff; /* Light text color */
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 15px;
+}
+
+.expense-input-container input:focus {
+  background: #3a3a4b; /* Slightly lighter on focus */
+}
+
+/* Split Option Dropdown */
+.split-option {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #2a2a3b;
+  color: #ffffff;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.split-option:focus {
+  background: #3a3a4b;
+}
+
+/* Friends List Container */
+.friends-container {
+  margin-bottom: 15px;
 }
 
 /* Friend Entry */
 .friend-entry {
-  margin: 5px 0; /* Reduced margin */
+  background: #2a2a3b;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
-/* QR Code Container */
+.friend-entry input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.friend-entry input:focus {
+  background: #3a3a4b;
+}
+
+.remove-button {
+  background: #d9534f;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.remove-button:hover {
+  background: #c9302c;
+}
+
+/* Add Friend Button */
+.submit-button {
+  background: #0592e4; /* Vibrant blue */
+  color: #ffffff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px 0;
+  width: 100%; /* Full-width button */
+  transition: all 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+  background: #047bb0; /* Darker blue on hover */
+}
+
+/* QR Code Display */
 .qr-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 10px; /* Reduced margin under QR codes */
+  margin-top: 20px;
 }
 
 .qr-box {
-  margin: 5px;
-  padding: 10px;
-  border: 1px solid #ddd;
+  background: #2a2a3b;
+  padding: 15px;
   border-radius: 10px;
   text-align: center;
+  margin: 10px;
+  width: 140px;
+}
+
+.qr-box p {
+  color: #f3fcfb;
+  font-weight: bold;
 }
 
 .qr-box img {
@@ -64,9 +145,34 @@ input {
   margin-top: 10px;
 }
 
-/* General Body Reset */
-body {
-  margin: 0; /* Ensure there's no extra margin around the body */
-  padding: 0; /* Ensure there's no padding around the body */
-  background-color: #fff; /* Optional: Set the background to white */
+/* Manual Contribution Field */
+.manual-contribution {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: #2a2a3b;
+  color: #ffffff;
+}
+
+.manual-contribution:focus {
+  background: #3a3a4b;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .split-friends-container {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .submit-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .friend-entry input {
+    font-size: 14px;
+  }
 }

@@ -1,75 +1,72 @@
 .faq_body {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-size: 2rem;
-    font-weight: 400;
-    line-height: 1.5;
-   
-    text-align: left;
-}
-.text-center {
-    text-align: center!important;
-}
-.faq-header {
-    line-height: 1.5;
-    color: #f1f1f1;
-  
-}
-.faq-header h1{
-    font-weight: 650;
+    margin-top: -80px;
+    padding: 150px 0;
 }
 
-@media only screen and (max-width: 600px)
-{.faq-header {
-    color: #f1f1f1;
-    font-weight: bold !important;
-}
-}
-.card {
-    font-family: "Poppins", sans-serif;
-   margin: 1rem;
-   border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
-   background: transparent;
-}
-.card-header{
-    background-color: #78CBBB;
+.faq-header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #f4eded;
+    margin-bottom: 10px;
 }
 
-.btn-link {
+.faq-list {
+    max-width: 700px;
+    margin: auto;
+}
+
+.faq-item {
+    background: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.faq-question {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-text-decoration: none !important;
-color: #161616;
-font-weight: bolder;
-font-size: 1rem;
-text-align: left;
-width: 100%;
-}
-.btn-link:hover {
-    color: #f1f1f1;
-    text-decoration: none !important;
+    align-items: center;
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
 }
 
-.card-body{
-    background: #161616;
-    border: none !important;
-    margin-bottom: 5px;
-    margin-top: 10px;
-    border-radius: 10px;
-    color: #FFFFFF;
-    font-size: 12px;
-    flex: 1 1 auto;
-    padding: 1.25rem;
-    font-size: 1rem;
-    font-weight: 0;
+.faq-question:hover {
+    background: #0056b3;
 }
 
-#dropdown {
-   
-    /* background-color: yellow; */
+.faq-icon {
+    font-size: 20px;
+}
+
+.faq-answer {
+    padding: 15px;
+    font-size: 16px;
+    background: white;
+    color: #333;
+    border-left: 3px solid #007bff;
+}
+
+.active .faq-answer {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .faq-header h1 {
+        font-size: 24px;
+    }
+
+    .faq-question {
+        font-size: 16px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+    }
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import Carousel from '../Carousel/Carousel'
-import StockWork from '../StockWork/StockWork'
+
 import Support from '../Support/Support'
 import Timer from '../Timer/Timer'
 import Faq from '../Faq/Faq'
@@ -14,7 +14,7 @@ const Home = () => {
             
             <Carousel />
             <Timer />
-            <StockWork />
+           
             <Support />
             {/* <Faq />
             <OurTeam /> */}
