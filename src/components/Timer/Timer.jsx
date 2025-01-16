@@ -8,7 +8,7 @@ const Timer = () => {
         
     </section>
     <section class="home">
-        <img src="https://stockpe.tech/img/Scores.png" alt="img1" class="score" />
+        
     </section>
     </>
     )

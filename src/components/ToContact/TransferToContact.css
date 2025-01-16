@@ -1,0 +1,94 @@
+/* Container styling */
+.transfer-to-contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    /* Light background */
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    margin-top: 10vh;
+  }
+  
+  /* Header styling */
+  .transfer-to-contact-container h1 {
+    color: #f0e9e9;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Form container */
+  .transfer-form {
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff; /* White card background */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Label styling */
+  .transfer-form label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  
+  /* Input field styling */
+  .transfer-form input {
+    height: 45px;
+    padding: 0 12px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    margin-bottom: 16px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Input focus styling */
+  .transfer-form input:focus {
+    border-color: #007bff; /* Primary color for focus */
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.2);
+  }
+  
+  /* Button styling */
+  .transfer-button {
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(135deg, #00bfa6, #00a6ff); /* Gradient for button */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .transfer-button:hover {
+    background: linear-gradient(135deg, #00a693, #008fe0); /* Darker gradient on hover */
+    transform: scale(1.02); /* Slight scale on hover */
+  }
+  
+  .transfer-button:active {
+    transform: scale(0.98); /* Slight press effect */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 480px) {
+    .transfer-form {
+      padding: 15px;
+    }
+  
+    .transfer-button {
+      font-size: 14px;
+    }
+  }
+  

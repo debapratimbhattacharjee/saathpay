@@ -32,7 +32,7 @@ const StockWork = () => {
                 </div>
             </section>
             <section className="home">
-                <img src="https://your-image-link.com/expenses.png" alt="img1" className="score" />
+                
             </section>
         </>
     )

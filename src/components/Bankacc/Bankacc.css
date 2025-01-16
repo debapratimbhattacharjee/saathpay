@@ -1,0 +1,139 @@
+/* Main Container */
+.bank-acc-container {
+  font-family: 'Roboto', sans-serif;
+  max-width: 360px;
+  margin: 20px auto;
+  padding: 16px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #ffffff, #f7f9fc);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e6e8ec;
+}
+
+/* Header Styling */
+h1 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 12px;
+  color: #333333;
+  font-weight: 600;
+}
+
+/* Transfer Options Styling */
+.transfer-option {
+  display: flex;
+  justify-content: space-between; /* Align options side-by-side */
+  margin-bottom: 16px;
+}
+
+.transfer-option label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #555555;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  accent-color: #4caf50;
+  transform: scale(1.1);
+}
+
+/* Form Fields Styling */
+.bank-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+label {
+  font-size: 13px;
+  color: #333333;
+  font-weight: 500;
+  margin-bottom: 4px; /* Spacing between label and input */
+}
+
+input {
+  padding: 8px 10px;
+  font-size: 14px;
+  color: #333333;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  outline: none;
+  background-color: #fdfdfd;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 4px rgba(76, 175, 80, 0.3);
+}
+
+/* Amount Section Styling */
+.amount-section {
+  display: flex;
+  align-items: center; /* Align amount label and input on the same line */
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.amount-section label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #555555;
+  white-space: nowrap;
+}
+
+.amount-section input {
+  flex: 1; /* Input takes remaining space */
+}
+
+/* Button Styling */
+.transfer-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  letter-spacing: 0.4px;
+}
+
+.transfer-button:hover {
+  background-color: #45a049;
+  box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+}
+
+.transfer-button:active {
+  background-color: #3e8e41;
+  transform: scale(0.98);
+}
+
+/* Placeholder Styling */
+input::placeholder {
+  color: #aaaaaa;
+  font-size: 13px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .bank-acc-container {
+    padding: 12px;
+    margin: 16px 8px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  input {
+    padding: 6px 8px;
+  }
+}

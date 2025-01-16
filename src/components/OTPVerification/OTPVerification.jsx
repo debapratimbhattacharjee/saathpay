@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import './OTPVerification.css';
+
+
 import logo1 from '../../assets/images/logo1.png'; // Adjust path if necessary
 
 const OTPVerification = () => {

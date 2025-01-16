@@ -64,7 +64,7 @@ const SplitWithFriends = () => {
     const qrImages = friends.map((friend, index) => ({
       name: friend.name,
       phone: friend.phone,
-      qrCode: `https://api.qrserver.com/v1/create-qr-code/?data=Contribution%3A%20${contributions[index]}&size=100x100`,
+      qrCode: `https://api.qrserver.com/v1/create-qr-code/?data=Contribution%3A%20${contributions[index]}&size=100x100`, // Fixed the template string
     }));
     setQrCodes(qrImages);
   };
@@ -148,7 +148,7 @@ const SplitWithFriends = () => {
               <p>
                 {qr.name}'s Contribution: ₹{contributions[index].toFixed(2)}
               </p>
-              <img src={qr.qrCode} alt={`${qr.name}'s QR Code`} />
+              <img src={qr.qrCode} alt={`${qr.name}'s QR Code`} /> {/* Fixed the alt tag */}
             </div>
           ))}
         </div>

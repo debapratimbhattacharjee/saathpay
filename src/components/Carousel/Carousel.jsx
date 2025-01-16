@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Lottie from 'react-lottie';
 import './Carousel.css';
+
 import logo1 from '../../assets/images/logo1.png';
+import coinAnimation from '../../assets/images/coinAnimatio.json'; // Make sure the path is correct
 
 const Carousel = () => {
     const [mobile, setMobile] = useState('');
@@ -15,6 +18,16 @@ const Carousel = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         navigate('/verify-otp'); // Navigate to the OTP page
+    };
+
+    // Lottie options for the coin animation
+    const coinAnimationOptions = {
+        loop: true,
+        autoplay: true, 
+        animationData: coinAnimation, 
+        rendererSettings: {
+            preserveAspectRatio: 'xMidYMid slice',
+        },
     };
 
     return (
@@ -54,11 +67,17 @@ const Carousel = () => {
                                     onChange={handleChange}
                                     required
                                 />
-                                <button type="submit" className="btn btn-primary nav_btn">
-                                    Get Started
-                                </button>
+                                <button type="submit" className="get-started-btn">
+  Get Started
+</button>
+
                             </form>
                         </div>
+                    </div>
+
+                    {/* Coin Animation */}
+                    <div className="coin-animation-container">
+                        <Lottie options={coinAnimationOptions} height={800} width={1000} />
                     </div>
                 </div>
             </div>

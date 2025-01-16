@@ -1,117 +1,165 @@
-.carousel{
-    width:70%;
-    padding-bottom: 150px;
-     
- }
- 
- .carousel-indicators{
-     top: 170px;
-     right: 170px;
- }
- .carousel-indicators li {
-     border-radius:50%;
-     width: 12px;
-     height: 12px;
- }
- 
- .carousel-inner{
-     margin-top: 70px;
-     margin-left: 150px;
- }
- 
- .carousel-item h2{
-     /* font-family: "Poppins"; */
-     font-weight: bold;
-     color: #f1f1f1;
-     max-width: 450px;
-     font-size:40px
- }
- 
- .carousel-item p{
-     /* font-family: "Poppins"; */
-     color: #f1f1f1;
-     max-width: 400px;
-     font-size:20px
- }
- 
- .d-flex{
-   margin-left: 145px;
-   padding-bottom: 40px;
- }
- 
- 
- 
- input[type=number] {
-  
-   box-sizing: border-box;
-   backdrop-filter: blur(19.9973px);
-   border-radius: 11px;
-   width:50%;
-  }
- 
-  .landing_svg{
-    width:100%;
-  
-  }
+.carousel {
+  width: 70%;
+  padding-bottom: 150px;
+}
 
-  .section{
-    padding-bottom: 100px;
-  }
+.carousel-indicators {
+  top: 170px;
+  right: 200px;
+  margin-top: 10px;
+}
 
-  @media only screen and (max-width: 600px) {
-  .carousel-indicators li {
-    border-radius:50%;
-    width: 8px;
-    height: 8px;
-    
-  }
-  
-  .carousel{
-    width:90%;
-    padding-bottom: 50px;
-  }
-  
-  .carousel-indicators{
-    top:100px;
-    right: 170px;
-    margin-left: 0px;
-  }
-  
-  .carousel-inner{
-    margin-top: 30px;
-    margin-left: 20px;
-  }
-  .carousel-item h2{
-    /* font-family: "Poppins"; */
-    font-weight: bold;
-    color: #f1f1f1;
-    max-width: 300px;
-    font-size: 20px;
-  }
-  
-  .carousel-item p{
-    /* font-family: "Poppins"; */
-    color: #f1f1f1;
-    max-width: 200px;
-    font-size:10px
-  }
-  
-  .d-flex{
-    margin-left: 10px;
-    padding-bottom: 40px;
-    flex-direction: column;
-    max-width: 300px;
-  }
-  
-  
-  input[type=number] {
+.carousel-indicators li {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+
+.carousel-inner {
+  margin-top: 70px;
+  margin-left: 150px;
+}
+
+.carousel-item h2 {
+  font-weight: bold;
+  color: #f1f1f1;
+  max-width: 450px;
+  font-size: 40px;
+}
+
+.carousel-item p {
+  color: #f1f1f1;
+  max-width: 450px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.d-flex {
+  margin-left: 145px;
+  padding-bottom: 40px;
+}
+
+.phone-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px; /* Space between input and button */
+  margin-top: 20px;
+}
+
+
+ 
+input[type=number] {
   background: linear-gradient(120deg, rgba(26, 48, 65, 0.39) -0.99%, rgba(35, 63, 89, 0.1) 75.38%);
   border: 1px solid #33E6F6;
   box-sizing: border-box;
   backdrop-filter: blur(19.9973px);
   border-radius: 11px;
-  width:100%;
+  width:50%;
+ }
+
+ .landing_svg{
+   width:100%;
+ 
+ }
+
+ .section{
+   padding-bottom: 100px;
+ }
+
+
+/* Get Started Button */
+.get-started-btn {
   
-  }
+ 
+  background-color: #08b9c9;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 50%; /* Same width as the input field */
+  max-width: 150px; /* Max width for better responsiveness */
   
+  box-shadow: inset 0px 3.99946px 3.99946px rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+  padding-left: 20px;
+  margin-left: 350px;
+  margin-top: -50px;
+ 
+ 
+}
+
+.get-started-btn:hover {
+  background-color: #28b9d8;
+
+}
+.coin-animation-container {
+
+  position: fixed; /* Ensures the coin stays in the top-right corner even on scroll */
+  top: 10px; /* Adjust the top margin */
+  right: 300px; /* Adjust the right margin */
+  width: 500px; /* Adjust the size of the coin */
+  height: 800px;
+  background: no-repeat center center;
+  background-size: cover;
+  z-index: 150; /* Ensures it stays above other elements */
+}
+
+/* Responsive Layout */
+@media only screen and (max-width: 600px) {
+  .carousel {
+      width: 90%;
+      padding-bottom: 50px;
   }
+
+  .carousel-indicators {
+      top: 120px;
+      right: 170px;
+      margin-left: 0px;
+  }
+
+  .carousel-inner {
+      margin-top: 30px;
+      margin-left: 20px;
+  }
+
+  .carousel-item h2 {
+      font-weight: bold;
+      color: #f1f1f1;
+      max-width: 300px;
+      font-size: 22px;
+  }
+
+  .carousel-item p {
+      color: #f1f1f1;
+      margin-left: px;
+      max-width: 250px;
+      font-size: 12px;
+  }
+
+  .d-flex {
+      margin-left: 10px;
+      padding-bottom: 40px;
+      flex-direction: column;
+      max-width: 300px;
+  }
+
+  /* Adjusting Phone Input & Button */
+  .phone-container {
+      width: 100%;
+      padding: 0 20px;
+  }
+
+  input[type="number"] {
+      width: 90%;
+      padding: 14px;
+      font-size: 18px;
+  }
+
+  .get-started-btn {
+      width: 90%;
+      padding: 16px;
+      font-size: 20px;
+  }
+}

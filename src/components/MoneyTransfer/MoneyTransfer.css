@@ -48,13 +48,13 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-    background: #33e6f6;
+    background: #011518;
     padding: 10px 0;
     border-radius: 10px 10px 0 0;
   }
   
   .nav-item {
-    color: #1a303e;
+    color: #eaf2f6;
     font-size: 16px;
     cursor: pointer;
   }
