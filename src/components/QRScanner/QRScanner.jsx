@@ -1,32 +1,40 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
-import { QrReader } from 'react-qr-reader';
+import { Html5QrcodeScanner } from 'html5-qrcode'; // Correct QR scanner package
 import './QRScanner.css'; // Import CSS for styling
 
 const QRScanner = () => {
   const navigate = useNavigate(); // Hook for navigation
 
-  const handleResult = (result, error) => {
-    if (result) {
-      console.log('Scanned Result:', result.text);
-      alert(`Scanned Result: ${result.text}`); // Display scanned result
-    }
+  useEffect(() => {
+    // Initialize the scanner with ID 'reader' where the scanner will appear
+    const qrCodeScanner = new Html5QrcodeScanner(
+      "reader", // This is the div ID where the scanner will render
+      {
+        fps: 10, // Frames per second
+        qrbox: 250, // Size of the scanning box
+      },
+      false
+    );
 
-    if (error) {
+    // Start scanning
+    qrCodeScanner.render((result) => {
+      console.log('Scanned Result:', result);
+      alert(`Scanned Result: ${result.text}`); // Display scanned result
+    }, (error) => {
       console.error(error);
-    }
-  };
+    });
+
+    // Cleanup function to stop the scanner when component is unmounted
+    return () => {
+      qrCodeScanner.clear();
+    };
+  }, []);
 
   return (
     <div className="scanner-container">
       <h2 className="scanner-heading">Scan QR Code</h2>
-      <div className="scanner-box">
-        <QrReader
-          onResult={handleResult}
-          constraints={{ facingMode: 'environment' }} // Use rear camera
-          className="scanner"
-        />
-      </div>
+      <div id="reader" className="scanner-box"></div> {/* Container for the scanner */}
       <p className="scanner-instructions">
         Align the QR code within the frame to scan.
       </p>
